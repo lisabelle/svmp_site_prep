@@ -58,5 +58,9 @@ for site in site_list:
     # note that the out_file path expects a subdirectory 'maps' is present. Modify as needed. 
     out_file = lyt.exportToPDF(basedir + 'maps/{0}_transect_map.pdf'.format(site))
     
+    # to control execution of maps, it's assigned to a variable (out_file). 
+    # You can comment the next line out if you want to test that the rest of the variables are valid.
+    out_file
+    
     # clear the def query and repeat, iterating through the feature class, site by site.
     lyr.definitionQuery = None
